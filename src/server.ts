@@ -16,20 +16,16 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   // Filtered an image and return the same image modified
   app.get('/filteredimage', async (req: Request, res: Response) => {
-    const image_url = req.query.image_url.toString();
+    const { image_url }= req.query;
     // verify if image url was provided
     if (!image_url) {
       res.status(400).send('Please provide the image Url');
     }
-
     // Get the  new filtered imgae
-    const filtered_image = await filterImageFromURL(image_url);
-
-
+    const filtered_image = await filterImageFromURL(image_url as string);
     res.status(200).sendFile(filtered_image, () => {
       deleteLocalFiles([filtered_image])
     });
-
   });
 
   // Displays a simple message to the user
