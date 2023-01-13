@@ -35,3 +35,6 @@ In the file `./src/server.ts` I create a new endpoint in which I use query param
 
 ### My Elastic Beanstalk Endpoint
 http://udagram-paul-dev-dev.us-west-2.elasticbeanstalk.com
+
+[http://udagram-paul-dev-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://www.imedias.pro/wp-content/themes/bootstrap-basic4-child/images/cours/images_web/fleurs_violettes.jpg
+](http://udagram-paul-dev-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://www.imedias.pro/wp-content/themes/bootstrap-basic4-child/images/cours/images_web/fleurs_violettes.jpg)
